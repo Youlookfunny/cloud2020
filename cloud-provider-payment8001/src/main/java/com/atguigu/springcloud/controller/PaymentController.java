@@ -51,7 +51,7 @@ public class PaymentController {
     }
 
     @GetMapping("/payment/discovery")
-    public Object discovery(){
+    public Object discovery() {
         //获取服务列表的信息
         List<String> services = discoveryClient.getServices();
         for (String element : services) {
@@ -66,6 +66,11 @@ public class PaymentController {
         }
 
         return this.discoveryClient;
+    }
+
+    @GetMapping("/payment/zipkin")
+    public String paymentZipkin() {
+        return "paymentZipkin...";
     }
 
 }
