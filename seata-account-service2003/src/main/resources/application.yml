@@ -1,9 +1,9 @@
 server:
-  port: 2001
+  port: 2003
 
 spring:
   application:
-    name: seata-order-service
+    name: seata-account-service
   cloud:
     alibaba:
       seata:
@@ -17,7 +17,7 @@ spring:
     type: com.alibaba.druid.pool.DruidDataSource
     # mysql驱动类
     driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://localhost:3306/seata_order?useUnicode=true&characterEncoding=UTF-8&serverTimezone=Asia/Shanghai
+    url: jdbc:mysql://localhost:3306/seata_account?useUnicode=true&characterEncoding=UTF-8&serverTimezone=Asia/Shanghai
     username: root
     password: Lwz102466
 feign:
